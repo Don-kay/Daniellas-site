@@ -1,0 +1,278 @@
+.snd {
+  --fadehover: #c4dbe2;
+  --borderbtn: 2.5px solid var(--portal);
+  --portal: #050516;
+  --textColor: #000000;
+  --textHover: #fff5f5;
+  --border: #020b35;
+  --border2: #6b0505;
+  --bgtint: #4ed9eb2f;
+  --bgmain: rgb(71, 126, 179);
+  --borderdisp: 3px solid var(--border);
+  --borderdisp2: 3px solid var(--border2);
+}
+
+.kss2cont {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  position: relative;
+  background-color: red;
+  padding-left: 0vw;
+  top: 13vh;
+  left: 0vw;
+  border: none;
+  border-radius: 2px;
+  -webkit-box-shadow: 0px 0px 10px rgba(97, 95, 95, 0.295);
+          box-shadow: 0px 0px 10px rgba(97, 95, 95, 0.295);
+  width: 100vw;
+  height: 30vh;
+  padding-top: 90px;
+  overflow: hidden;
+}
+
+.galleries {
+  position: relative;
+  top: 0vh;
+  left: -13px;
+  height: 100vh;
+  width: 0vw;
+  -webkit-animation: slide 30s linear infinite;
+          animation: slide 30s linear infinite;
+  -webkit-transition: 1000ms ease all;
+  transition: 1000ms ease all;
+}
+
+.textelemets {
+  display: block;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  position: relative;
+  top: -90vh;
+  z-index: 10;
+  -webkit-animation: slideDown 3000ms ease-in 1;
+          animation: slideDown 3000ms ease-in 1;
+}
+
+.kls2_cont {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  position: relative;
+  top: 40vh;
+  width: 100vw;
+  height: 100vh;
+}
+
+.text {
+  font-family: "Oswald";
+  font-size: 5ch;
+  font-weight: 600;
+  color: #ffffff;
+  background-color: transparent;
+  margin-left: 17vw;
+  width: 40vw;
+}
+
+.policy-main {
+  display: block;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: relative;
+  top: 18vh;
+  left: 0vw;
+  width: 100vw;
+  height: 100vh;
+}
+
+.kgText {
+  display: block;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  position: relative;
+  top: 5vh;
+  left: 20vw;
+  width: 40vw;
+  height: 105vh;
+  -webkit-box-shadow: 0px 0px 4px #77757573;
+          box-shadow: 0px 0px 4px #77757573;
+  background-color: #e6e4e4;
+}
+
+.kgText .kghead {
+  text-align: justify;
+  padding: 40px 50px 10px 50px;
+  letter-spacing: 1px;
+  font-size: 20px;
+  color: #bd2323;
+}
+
+.kgText .kss1head1 {
+  text-align: justify;
+  padding: 10px 50px 10px 50px;
+  letter-spacing: 1px;
+  font-size: 20px;
+  color: #bd2323;
+}
+
+.kgText .kss1head1 span {
+  padding: 0px 50px 6px 0px;
+  text-align: justify;
+  font-size: 16px;
+  font-weight: 500;
+  letter-spacing: 1px;
+  line-height: 1.5;
+  color: #000000;
+}
+
+.kgText .kss1li {
+  padding: 0px 50px 10px 50px;
+  text-align: justify;
+  font-size: 15px;
+  font-weight: 500;
+  letter-spacing: 1px;
+  line-height: 1;
+  color: #000000;
+  position: relative;
+  top: -39px;
+}
+
+.kgText .curriculum {
+  text-align: justify;
+  padding: 0px 50px 10px 50px;
+  letter-spacing: 1px;
+  font-size: 17px;
+  color: #bd2323;
+}
+
+.kgText .curriculum p {
+  padding: 0px 50px 10px 50px;
+  text-align: justify;
+  font-size: 15px;
+  font-weight: 500;
+  letter-spacing: 1px;
+  line-height: 1.5;
+  color: #000000;
+}
+
+.kgText .curriculum li {
+  padding: 0px 50px 10px 50px;
+  text-align: justify;
+  font-size: 15px;
+  font-weight: 500;
+  letter-spacing: 1px;
+  line-height: 1.5;
+  color: #000000;
+}
+
+p {
+  padding: 0px 50px 10px 50px;
+  text-align: justify;
+  font-size: 15px;
+  letter-spacing: 1px;
+  line-height: 1.5;
+}
+
+.subject {
+  position: relative;
+  left: 20vw;
+  top: 10vh;
+  width: 60vw;
+  height: 40vh;
+}
+
+.subject .subjectsCont {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  margin-top: 55px;
+}
+
+.subject .subjectsCont .subjects {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  list-style: none;
+  border-radius: 5px;
+  background-color: #ffffff;
+  width: 10vw;
+  height: 4vh;
+  margin: 14px 0px;
+  -webkit-box-shadow: 0px 0px 1.5px #ffffff;
+          box-shadow: 0px 0px 1.5px #ffffff;
+}
+
+.images {
+  width: 110vw;
+  height: 100vh;
+  position: relative;
+  top: -20vh;
+  left: 0vw;
+  border-radius: 10px;
+  border: 1px solid transparent;
+  margin: 0px 10px auto;
+  -webkit-transition: 500ms ease all;
+  transition: 500ms ease all;
+}
+
+.picturesCont {
+  position: relative;
+  top: 33vh;
+  left: 0vw;
+}
+
+.picturesCont .pix {
+  width: 19vw;
+  height: 30vh;
+  margin-top: 4vh;
+  position: relative;
+  left: -20vw;
+}
+
+.picturesCont .pixheader {
+  position: absolute;
+  top: -55vh;
+  left: -121vh;
+  width: 28vw;
+  height: 37vh;
+}
+
+.picturesCont .pixheader1 {
+  position: absolute;
+  top: -55vh;
+  left: -57vh;
+  width: 28vw;
+  height: 37vh;
+}
+/*# sourceMappingURL=kss2.css.map */

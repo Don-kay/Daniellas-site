@@ -1,0 +1,153 @@
+@import "../../variablecomp//variable.scss";
+.map-main {
+  display: block;
+  justify-content: center;
+  position: relative;
+  top: 380vh;
+  // background-color: rgb(117, 13, 13);
+  width: 100vw;
+  height: 87vh;
+  z-index: -3;
+  overflow: hidden;
+
+  .fadeimg {
+    opacity: 1;
+    position: relative;
+    top: -270vh;
+    left: -7vw;
+    width: 110vw;
+    height: 160vh;
+    filter: opacity(0.5) brightness(0.7);
+  }
+
+  .testHov {
+    position: relative;
+    top: -120vh;
+    left: -7vw;
+    width: 110vw;
+    height: 160vh;
+    filter: blur(0.3);
+    background-color: $literbluetheme;
+  }
+
+  .testimonial-cont {
+    display: block;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    left: 0vw;
+    top: 9vh;
+    width: 110vw;
+    height: 80vh;
+    // overflow: hidden;
+
+    .test-article {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 70vw;
+      height: 80vh;
+      position: relative;
+      left: -4vw;
+      top: -13vh;
+    }
+  }
+}
+.ceo-statecont {
+  display: flex;
+  margin-top: 0px;
+  background-color: transparent;
+  width: 100vw;
+  padding-bottom: 10vw;
+  height: 60vh;
+  overflow: hidden;
+}
+.speech {
+  display: flex;
+  align-items: center;
+  background-color: rgb(157, 167, 167);
+  position: relative;
+  padding: 10px 15px 10px 15px;
+  margin-top: 10vh;
+  margin-left: 20vw;
+  margin-bottom: 0vh;
+  height: 50vh;
+  width: 35vw;
+}
+.ceo-state {
+  position: relative;
+  margin-top: -11vh;
+  margin-left: 0.8vw;
+  width: 17vw;
+  height: 29vh;
+  border-radius: 8px;
+}
+// .ceo-state::after {
+//   content: "";
+//   position: relative;
+//   width: 50vw;
+//   height: 40vh;
+//   background-color: blue;
+//   top: 10vw;
+// }
+.statement {
+  width: 50vw;
+  font-size: 14px;
+  margin-left: -2vw;
+  position: relative;
+  left: 25px;
+  top: -4vh;
+}
+.ceo1 {
+  position: relative;
+  top: 24vw;
+  left: -40vw;
+  width: 30vw;
+  height: 10vh;
+}
+
+.testimonial {
+  // display: block;
+  // align-items: center;
+  // justify-content: center;
+  position: relative;
+  top: 23vh;
+  left: 20vw;
+  // background-color: rgb(202, 32, 32);
+  width: 25vw;
+  height: 50vh;
+
+  .testifier {
+    font-weight: 600;
+    color: $textWhite;
+  }
+  .testimonial-txt {
+    letter-spacing: 0.5px;
+    color: $textWhite;
+    text-align: center;
+  }
+}
+.testimonialImg {
+  width: 25vh;
+  height: 25vh;
+  border-radius: 50vw;
+}
+.testtxt {
+  margin-top: 80px;
+}
+.pagin-btn {
+  width: 80%;
+  height: 40px;
+  list-style: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.pagin-btn a {
+  padding: 10px;
+  margin: 8px;
+  border: 1px solid blue;
+  border-radius: 5px;
+  color: rgb(7, 7, 7);
+  cursor: pointer;
+}

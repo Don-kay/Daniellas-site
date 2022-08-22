@@ -1,0 +1,266 @@
+.snd {
+  --fadehover: #c4dbe2;
+  --borderbtn: 2.5px solid var(--portal);
+  --portal: #050516;
+  --textColor: #000000;
+  --textHover: #fff5f5;
+  --border: #020b35;
+  --border2: #6b0505;
+  --bgtint: #4ed9eb2f;
+  --bgmain: rgb(71, 126, 179);
+  --borderdisp: 3px solid var(--border);
+  --borderdisp2: 3px solid var(--border2);
+}
+
+.contactcont {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  position: relative;
+  padding-left: 0vw;
+  top: 13vh;
+  left: 0vw;
+  border: none;
+  border-radius: 2px;
+  -webkit-box-shadow: 0px 0px 10px rgba(97, 95, 95, 0.295);
+          box-shadow: 0px 0px 10px rgba(97, 95, 95, 0.295);
+  width: 100vw;
+  height: 30vh;
+  padding-top: 90px;
+  overflow: hidden;
+}
+
+.galleries {
+  position: relative;
+  top: 0vh;
+  left: -13px;
+  height: 100vh;
+  width: 0vw;
+  -webkit-animation: slide 30s linear infinite;
+          animation: slide 30s linear infinite;
+  -webkit-transition: 1000ms ease all;
+  transition: 1000ms ease all;
+}
+
+.textelemets {
+  display: block;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  position: relative;
+  top: -90vh;
+  z-index: 10;
+  -webkit-animation: slideDown 3000ms ease-in 1;
+          animation: slideDown 3000ms ease-in 1;
+}
+
+.kls2_cont {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  position: relative;
+  top: 40vh;
+  width: 100vw;
+  height: 100vh;
+}
+
+.text {
+  font-family: "Oswald";
+  font-size: 5ch;
+  font-weight: 600;
+  color: #ffffff;
+  background-color: transparent;
+  margin-left: 17vw;
+  width: 40vw;
+}
+
+.cntpolicy-main {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: relative;
+  top: -23vh;
+  left: 0vw;
+  width: 100vw;
+  height: 60vh;
+  background-color: transparent;
+}
+
+.cntpolicy-main .contactText {
+  display: block;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  position: relative;
+  top: -9vh;
+  left: -1vw;
+  width: 25vw;
+  height: 40vh;
+  -webkit-box-shadow: 0px 0px 4px #77757573;
+          box-shadow: 0px 0px 4px #77757573;
+  background-color: #e6e4e4;
+}
+
+.cntpolicy-main .contactText .cnthead {
+  text-align: justify;
+  padding: 30px 50px 10px 50px;
+  letter-spacing: 1px;
+  font-size: 20px;
+  color: #bd2323;
+}
+
+.cntpolicy-main .contactText p {
+  padding: 0px 50px 10px 50px;
+  text-align: center;
+  font-size: 15px;
+  letter-spacing: 0px;
+  line-height: 1.2;
+  color: #474141;
+  position: relative;
+}
+
+.cntpolicy-main .contactText .cnthead1 {
+  text-align: center;
+  padding: 10px 50px 10px 50px;
+  letter-spacing: 1px;
+  font-size: 20px;
+  color: #bd2323;
+  width: 20vw;
+  position: relative;
+  left: 2vw;
+  border-radius: 3px;
+  background-color: #01092b;
+}
+
+.cntpolicy-main .contactText .cnthead1 span {
+  padding: 0px 50px 6px 0px;
+  text-align: justify;
+  font-size: 16px;
+  font-weight: 500;
+  letter-spacing: 1px;
+  line-height: 1.5;
+  color: #000000;
+}
+
+.cntpolicy-main .contactText .cntcurriculum {
+  text-align: center;
+  padding: 5px 50px 10px 50px;
+  letter-spacing: 1px;
+  font-size: 17px;
+  position: relative;
+  left: 2vw;
+  color: #bd2323;
+  background-color: #01092b;
+  width: 20vw;
+  height: 3vh;
+  border-radius: 2px;
+}
+
+.cntpolicy-main .contactText .cntcurriculum p {
+  padding: 0px 50px 10px 50px;
+  text-align: justify;
+  font-size: 15px;
+  font-weight: 500;
+  letter-spacing: 0px;
+  line-height: 1.2;
+  color: #474141;
+}
+
+.cntpolicy-main .contactText .secnd {
+  position: relative;
+  top: 3vh;
+}
+
+.cntpolicy-main .cnctform {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 1.2rem;
+  width: 30vw;
+  height: 55vh;
+  position: relative;
+  top: -4vh;
+  left: 3vw;
+  -webkit-box-shadow: 0px 0px 4px #77757573;
+          box-shadow: 0px 0px 4px #77757573;
+  background-color: #e6e4e4;
+  background-color: #01092b;
+  border: 1px solid #0b3075;
+}
+
+.cntpolicy-main .cnctform input,
+.cntpolicy-main .cnctform textarea {
+  position: relative;
+  left: 0vw;
+  width: 25vw;
+  padding: 1.3rem;
+  border-radius: 0.5rem;
+  resize: none;
+}
+
+.cntpolicy-main .cnctform .textcnct {
+  position: relative;
+  left: 0vw;
+  width: 25vw;
+  resize: none;
+  height: 20vh;
+  border: none;
+}
+
+.cntpolicy-main .cnctform button {
+  width: 10vw;
+  height: 3.7rem;
+  border-radius: 5px;
+  border: none;
+  background-color: #0b3075;
+  color: #ffffff;
+  position: relative;
+  left: 0vw;
+  -webkit-transition: 500ms ease all;
+  transition: 500ms ease all;
+}
+
+.cntpolicy-main .cnctform button:hover {
+  background-color: rgba(243, 232, 232, 0.562);
+  color: #000000;
+}
+
+.cont-images {
+  width: 110vw;
+  height: 100vh;
+  position: relative;
+  top: -20vh;
+  left: 0vw;
+  border-radius: 10px;
+  -webkit-transition: 500ms ease all;
+  transition: 500ms ease all;
+}
+/*# sourceMappingURL=contact.css.map */

@@ -1,0 +1,242 @@
+.snd {
+  --fadehover: #c4dbe2;
+  --borderbtn: 2.5px solid var(--portal);
+  --portal: #050516;
+  --textColor: #000000;
+  --textHover: #fff5f5;
+  --border: #020b35;
+  --border2: #6b0505;
+  --bgtint: #4ed9eb2f;
+  --bgmain: rgb(71, 126, 179);
+  --borderdisp: 3px solid var(--border);
+  --borderdisp2: 3px solid var(--border2);
+}
+
+.hero-slide {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: absolute;
+  top: 5vh;
+  left: 0vw;
+  width: 100vw;
+  height: 90vh;
+  -webkit-box-shadow: 0 6px 8px rgba(126, 127, 131, 0.753);
+          box-shadow: 0 6px 8px rgba(126, 127, 131, 0.753);
+  overflow: hidden;
+  background-color: transparent;
+  z-index: 0;
+}
+
+.heroes {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  z-index: -10;
+  opacity: 0;
+  -webkit-transition: 500ms ease all;
+  transition: 500ms ease all;
+}
+
+.heroes .heroLay {
+  width: 100vw;
+  height: 100vh;
+  background-color: #0e0c0e;
+  position: absolute;
+  top: 0vw;
+  -webkit-filter: opacity(0.1);
+          filter: opacity(0.1);
+}
+
+.activeSlide {
+  opacity: 1;
+  -webkit-transform: translateX(0vw);
+          transform: translateX(0vw);
+  z-index: -5;
+  -webkit-transition: 2500ms ease all;
+  transition: 2500ms ease all;
+}
+
+.tact {
+  color: black;
+}
+
+.textanim {
+  display: block;
+  position: absolute;
+  color: #000000;
+  top: 33vh;
+  width: 22vw;
+  padding-left: 20px;
+  text-align: left;
+  line-height: 1.9;
+  left: 25vw;
+  z-index: 80;
+  -webkit-animation: slideDown 1.75s ease 1;
+          animation: slideDown 1.75s ease 1;
+}
+
+.textanim .text {
+  font-family: "Oswald";
+  font-size: 5ch;
+  font-weight: 600;
+  color: #ffffff;
+  background-color: transparent;
+  margin-left: -24px;
+  width: 40vw;
+}
+
+.textanim .smallparam {
+  font-size: 18px;
+  font-family: "arial";
+  font-weight: 700;
+  height: 12px;
+  width: 35vw;
+  letter-spacing: 1px;
+  padding: 30px;
+  position: relative;
+  top: -10px;
+  left: -1vw;
+  color: #ffffff;
+}
+
+.textanim .hero-text {
+  position: relative;
+  left: 0vw;
+  top: 50px;
+  width: 10vw;
+  height: 5vh;
+  border-radius: 10px;
+  border: 1px solid black;
+  background-color: red;
+  color: #ffffff;
+}
+
+.textanim .hero-text:hover {
+  position: relative;
+  top: 50px;
+  width: 10vw;
+  height: 5vh;
+  border-radius: 10px;
+  border: 1px solid #2e60bd;
+  background-color: #01030e;
+  -webkit-box-shadow: 0px 0px 8px #2e60bd;
+          box-shadow: 0px 0px 8px #2e60bd;
+  color: #ffffff;
+  cursor: pointer;
+}
+
+.textanim.animatePrev {
+  -webkit-transform: translateY(-10vh);
+          transform: translateY(-10vh);
+  -webkit-transition: opacity 1.3s ease all;
+  transition: opacity 1.3s ease all;
+  -webkit-transition-delay: 100ms;
+          transition-delay: 100ms;
+  opacity: 0;
+}
+
+.textanim.animateNext {
+  -webkit-transform: translateY(0vh);
+          transform: translateY(0vh);
+  opacity: 0;
+  -webkit-transition: 1.3s ease all;
+  transition: 1.3s ease all;
+  -webkit-transition-delay: 100ms;
+          transition-delay: 100ms;
+}
+
+.textanim.animateActive {
+  -webkit-transform: translateY(0vh);
+          transform: translateY(0vh);
+  -webkit-transition: 3s ease all;
+  transition: 3s ease all;
+  -webkit-transition-delay: 100ms;
+          transition-delay: 100ms;
+  opacity: 1;
+}
+
+@-webkit-keyframes slideDown {
+  0% {
+    -webkit-transform: translateY(-100vh);
+            transform: translateY(-100vh);
+  }
+  100% {
+    -webkit-transform: translateY(0vh);
+            transform: translateY(0vh);
+  }
+}
+
+@keyframes slideDown {
+  0% {
+    -webkit-transform: translateY(-100vh);
+            transform: translateY(-100vh);
+  }
+  100% {
+    -webkit-transform: translateY(0vh);
+            transform: translateY(0vh);
+  }
+}
+
+.hero {
+  position: relative;
+  top: -18vh;
+  left: 0vw;
+  width: 100vw;
+  height: 150vh;
+  z-index: -15;
+}
+
+.firstHero {
+  position: relative;
+  top: -22vh;
+}
+
+.heroLast {
+  position: relative;
+  top: -35vh;
+  left: 0vw;
+  height: 150vh;
+  width: 110vw;
+}
+
+.arrowL {
+  width: 15vw;
+  height: 10vh;
+  z-index: 5;
+  position: absolute;
+  top: 50vh;
+  left: 0vw;
+  border-radius: 100px;
+}
+
+.null {
+  display: none;
+}
+
+.null2 {
+  display: none;
+}
+
+.arrowR {
+  width: 15vw;
+  height: 10vh;
+  z-index: 20;
+  position: relative;
+  top: 50vh;
+  left: 83vw;
+  border-radius: 100px;
+}
+
+.arrowRitem {
+  width: 8vw;
+  height: 10vh;
+  color: rgba(94, 88, 88, 0.815);
+}
+
+.arrowLitem {
+  width: 8vw;
+  height: 10vh;
+  color: rgba(94, 88, 88, 0.815);
+}
+/*# sourceMappingURL=Hero.css.map */

@@ -1,0 +1,5 @@
+// backend
+
+require("crypto").randomBytes(64).toString("hex");
+
+ctrl-C 2x to exit node     enter node -- node

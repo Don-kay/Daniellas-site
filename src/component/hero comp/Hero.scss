@@ -1,0 +1,219 @@
+@import "../../variablecomp/variable.scss";
+
+.hero-slide {
+  display: flex;
+  position: absolute;
+  top: 5vh;
+  left: 0vw;
+  width: 100vw;
+  height: 90vh;
+  box-shadow: 0 6px 8px rgba(126, 127, 131, 0.753);
+  overflow: hidden;
+  background-color: transparent;
+  z-index: 0;
+}
+
+// .hero-slidej {
+//   display: flex;
+//   position: absolute;
+//   top: 5vh;
+//   left: 0vw;
+//   width: 100vw;
+//   height: 90vh;
+//   box-shadow: 0 6px 8px rgba(126, 127, 131, 0.753);
+//   overflow: hidden;
+//   background-color: rgb(33, 6, 105);
+//   z-index: 0;
+// }
+
+// .container {
+//   display: flex;
+//   text-align: center;
+// }
+.heroes {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  z-index: -10;
+  opacity: 0;
+  transition: 500ms ease all;
+
+  .heroLay {
+    width: 100vw;
+    height: 100vh;
+    background-color: rgb(14, 12, 14);
+    position: absolute;
+    top: 0vw;
+    filter: opacity(0.1);
+  }
+}
+// .heroes.prevSlide {
+//   transform: translateX(-100vw);
+//   transition: 1000ms ease all;
+//   z-index: -5;
+//   // opacity: 0;
+// }
+.activeSlide {
+  opacity: 1;
+  transform: translateX(0vw);
+  z-index: -5;
+  transition: 2500ms ease all;
+}
+// .heroes.nextSlide {
+//   transform: translateX(+100vw);
+//   transition: 1000ms ease all;
+//   z-index: -5;
+//   // opacity: 0;
+// }
+.tact {
+  color: black;
+}
+.textanim {
+  display: block;
+  position: absolute;
+  color: $textColor;
+  top: 33vh;
+  width: 22vw;
+  padding-left: 20px;
+  text-align: left;
+  line-height: 1.9;
+  // background-color: aqua;
+  left: 25vw;
+  z-index: 80;
+  animation: slideDown 1.75s ease 1;
+
+  .text {
+    font-family: "Oswald";
+    font-size: 5ch;
+    font-weight: 600;
+    color: $textWhite;
+    background-color: transparent;
+    margin-left: -24px;
+    width: 40vw;
+  }
+
+  .smallparam {
+    font-size: 18px;
+    font-family: "arial";
+    font-weight: 700;
+    height: 12px;
+    width: 35vw;
+    letter-spacing: 1px;
+    padding: 30px;
+    position: relative;
+    top: -10px;
+    left: -1vw;
+    color: $textWhite;
+  }
+  .hero-text {
+    position: relative;
+    left: 0vw;
+    top: 50px;
+    width: 10vw;
+    height: 5vh;
+    border-radius: 10px;
+    border: 1px solid black;
+    background-color: red;
+    color: $textWhite;
+  }
+  .hero-text:hover {
+    position: relative;
+    top: 50px;
+    width: 10vw;
+    height: 5vh;
+    border-radius: 10px;
+    border: $heroborderhover;
+    background-color: $darkbluetheme;
+    box-shadow: 0px 0px 8px $literbluetheme;
+    color: $textWhite;
+    cursor: pointer;
+  }
+}
+.textanim.animatePrev {
+  // transform: translateY(-100vh);
+  transform: translateY(-10vh);
+  transition: opacity 1.3s ease all;
+  transition-delay: 100ms;
+  opacity: 0;
+}
+
+.textanim.animateNext {
+  // transform: translateY(100vh);
+  transform: translateY(0vh);
+  opacity: 0;
+  transition: 1.3s ease all;
+  transition-delay: 100ms;
+}
+
+.textanim.animateActive {
+  transform: translateY(0vh);
+  transition: 3s ease all;
+  transition-delay: 100ms;
+  opacity: 1;
+}
+@keyframes slideDown {
+  0% {
+    transform: translateY(-100vh);
+  }
+  100% {
+    transform: translateY(0vh);
+  }
+}
+.hero {
+  position: relative;
+  top: -18vh;
+  left: 0vw;
+  width: 100vw;
+  height: 150vh;
+
+  z-index: -15;
+  // opacity: 0;
+}
+.firstHero {
+  position: relative;
+  top: -22vh;
+}
+.heroLast {
+  position: relative;
+  top: -35vh;
+  left: 0vw;
+  height: 150vh;
+  width: 110vw;
+}
+
+.arrowL {
+  width: 15vw;
+  height: 10vh;
+  z-index: 5;
+  position: absolute;
+  top: 50vh;
+  left: 0vw;
+  border-radius: 100px;
+}
+.null {
+  display: none;
+}
+.null2 {
+  display: none;
+}
+
+.arrowR {
+  width: 15vw;
+  height: 10vh;
+  z-index: 20;
+  position: relative;
+  top: 50vh;
+  left: 83vw;
+  border-radius: 100px;
+}
+.arrowRitem {
+  width: 8vw;
+  height: 10vh;
+  color: rgba(94, 88, 88, 0.815);
+  // z-index: 15;
+}
+.arrowLitem {
+  width: 8vw;
+  height: 10vh;
+  color: rgba(94, 88, 88, 0.815);
+}

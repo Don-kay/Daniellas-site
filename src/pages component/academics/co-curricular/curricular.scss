@@ -1,0 +1,230 @@
+@import "../../../variablecomp/variable.scss";
+.kss2cont {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  background-color: red;
+  padding-left: 0vw;
+  top: 13vh;
+  left: 0vw;
+  // outline: 1px solid black;
+  border: none;
+  border-radius: 2px;
+  box-shadow: 0px 0px 10px rgba(97, 95, 95, 0.295);
+  width: 100vw;
+  height: 30vh;
+  padding-top: 90px;
+  overflow: hidden;
+}
+.galleries {
+  position: relative;
+  top: 0vh;
+  left: -13px;
+  height: 100vh;
+  width: 0vw;
+  // outline: 1px solid black;
+  // background-color: rgb(230, 222, 222);
+  animation: slide 30s linear infinite;
+  transition: 1000ms ease all;
+}
+.textelemets {
+  display: block;
+  justify-content: center;
+  position: relative;
+  top: -90vh;
+  z-index: 10;
+  animation: slideDown 3000ms ease-in 1;
+}
+.kls2_contr {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  top: 0vh;
+  width: 100vw;
+  height: 100vh;
+}
+.text {
+  font-family: "Oswald";
+  font-size: 5ch;
+  font-weight: 600;
+  color: $textWhite;
+  background-color: transparent;
+  margin-left: 17vw;
+  width: 40vw;
+}
+.policy-main {
+  display: block;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  top: 18vh;
+  left: 0vw;
+  width: 100vw;
+  height: 100vh;
+}
+.curricularText {
+  display: block;
+  justify-content: center;
+  position: relative;
+  top: 5vh;
+  left: 20vw;
+  width: 40vw;
+  height: 90vh;
+  @include Board();
+  .kghead {
+    text-align: justify;
+    padding: 40px 50px 10px 50px;
+    letter-spacing: 1px;
+    font-size: 20px;
+    color: $redEl;
+  }
+
+  .kghead1 {
+    text-align: justify;
+    padding: 10px 50px 10px 50px;
+    letter-spacing: 1px;
+    font-size: 20px;
+    color: $redEl;
+
+    span {
+      padding: 0px 50px 6px 0px;
+      text-align: justify;
+      font-size: 16px;
+      font-weight: 500;
+      letter-spacing: 1px;
+      line-height: 1.5;
+      color: $textColor;
+    }
+  }
+  .curriculum {
+    text-align: justify;
+    padding: 0px 50px 10px 50px;
+    letter-spacing: 1px;
+    font-size: 17px;
+    color: $redEl;
+
+    p {
+      padding: 0px 50px 10px 50px;
+      text-align: justify;
+      font-size: 15px;
+      font-weight: 500;
+      letter-spacing: 1px;
+      line-height: 1.5;
+      color: $textColor;
+    }
+    li {
+      padding: 0px 50px 10px 50px;
+      text-align: justify;
+      font-size: 15px;
+      font-weight: 500;
+      letter-spacing: 1px;
+      line-height: 1.5;
+      color: $textColor;
+    }
+  }
+}
+p {
+  padding: 0px 50px 10px 50px;
+  text-align: justify;
+  font-size: 15px;
+  letter-spacing: 1px;
+  line-height: 1.5;
+
+  ul {
+    position: relative;
+    top: 5vh;
+
+    .subjects {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-weight: 600;
+      // list-style: none;
+      border-radius: 5px;
+      background-color: $textWhite;
+      width: 10vw;
+      height: 4vh;
+      margin: 14px 0px;
+      box-shadow: 0px 0px 1.5px $textWhite;
+    }
+  }
+}
+
+.subject {
+  position: relative;
+  left: 17vw;
+  top: 10vh;
+  //   background-color: burlywood;
+  // @include Board2();
+  width: 60vw;
+  height: 40vh;
+
+  .subjectsCont {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin-top: 55px;
+
+    .subjects {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      list-style: none;
+      border-radius: 5px;
+      background-color: $textWhite;
+      width: 10vw;
+      height: 4vh;
+      margin: 14px 0px;
+      box-shadow: 0px 0px 1.5px $textWhite;
+    }
+  }
+}
+.curimages {
+  width: 110vw;
+  height: 100vh;
+  position: relative;
+  top: -41vh;
+  left: 0vw;
+  border-radius: 10px;
+  border: 1px solid transparent;
+  margin: 0px 10px auto;
+  transition: 500ms ease all;
+}
+.curriculumImgsCont {
+  position: relative;
+  top: 10vh;
+  left: 0vw;
+
+  .curpix {
+    width: 49vw;
+    height: 42vh;
+    margin-top: 0vh;
+    position: absolute;
+    left: 0vw;
+    opacity: 0;
+    transition: 500ms ease all;
+    border-radius: 5px;
+    box-shadow: $boardcolor;
+  }
+  .curpix.curpixopen {
+    opacity: 1;
+  }
+  .curImgheader {
+    position: absolute;
+    top: 8vh;
+    left: 48vh;
+    width: 28vw;
+    height: 56vh;
+    // background-color: red;
+  }
+  .pixheader1 {
+    position: relative;
+    top: -5vh;
+    left: 0vh;
+    width: 28vw;
+    height: 37vh;
+  }
+}

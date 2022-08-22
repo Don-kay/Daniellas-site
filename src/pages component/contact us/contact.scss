@@ -1,0 +1,204 @@
+@import "../../variablecomp/variable.scss";
+.contactcont {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  // background-color: red;
+  padding-left: 0vw;
+  top: 13vh;
+  left: 0vw;
+  // outline: 1px solid black;
+  border: none;
+  border-radius: 2px;
+  box-shadow: 0px 0px 10px rgba(97, 95, 95, 0.295);
+  width: 100vw;
+  height: 30vh;
+  padding-top: 90px;
+  overflow: hidden;
+}
+.galleries {
+  position: relative;
+  top: 0vh;
+  left: -13px;
+  height: 100vh;
+  width: 0vw;
+  // outline: 1px solid black;
+  // background-color: rgb(230, 222, 222);
+  animation: slide 30s linear infinite;
+  transition: 1000ms ease all;
+}
+.textelemets {
+  display: block;
+  justify-content: center;
+  position: relative;
+  top: -90vh;
+  z-index: 10;
+  animation: slideDown 3000ms ease-in 1;
+}
+.kls2_cont {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  top: 40vh;
+  width: 100vw;
+  height: 100vh;
+}
+.text {
+  font-family: "Oswald";
+  font-size: 5ch;
+  font-weight: 600;
+  color: $textWhite;
+  background-color: transparent;
+  margin-left: 17vw;
+  width: 40vw;
+}
+.cntpolicy-main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  top: -23vh;
+  left: 0vw;
+  width: 100vw;
+  height: 60vh;
+  background-color: transparent;
+
+  .contactText {
+    display: block;
+    justify-content: center;
+    position: relative;
+    top: -9vh;
+    left: -1vw;
+    width: 25vw;
+    height: 40vh;
+    @include Board();
+
+    .cnthead {
+      text-align: justify;
+      padding: 30px 50px 10px 50px;
+      letter-spacing: 1px;
+      font-size: 20px;
+      color: $redEl;
+    }
+    p {
+      padding: 0px 50px 10px 50px;
+      text-align: center;
+      font-size: 15px;
+      letter-spacing: 0px;
+      line-height: 1.2;
+      color: rgb(71, 65, 65);
+      position: relative;
+    }
+    .cnthead1 {
+      text-align: center;
+      padding: 10px 50px 10px 50px;
+      letter-spacing: 1px;
+      font-size: 20px;
+      color: $redEl;
+      width: 20vw;
+      position: relative;
+      left: 2vw;
+      border-radius: 3px;
+      background-color: $bluethemeEl;
+
+      span {
+        padding: 0px 50px 6px 0px;
+        text-align: justify;
+        font-size: 16px;
+        font-weight: 500;
+        letter-spacing: 1px;
+        line-height: 1.5;
+        color: $textColor;
+      }
+    }
+    .cntcurriculum {
+      text-align: center;
+      padding: 5px 50px 10px 50px;
+      letter-spacing: 1px;
+      font-size: 17px;
+      position: relative;
+      left: 2vw;
+      color: $redEl;
+      background-color: $bluethemeEl;
+      width: 20vw;
+      height: 3vh;
+      border-radius: 2px;
+
+      p {
+        padding: 0px 50px 10px 50px;
+        text-align: justify;
+        font-size: 15px;
+        font-weight: 500;
+        letter-spacing: 0px;
+        line-height: 1.2;
+        color: rgb(71, 65, 65);
+      }
+    }
+    .secnd {
+      position: relative;
+      top: 3vh;
+    }
+  }
+  .cnctform {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 1.2rem;
+    width: 30vw;
+    height: 55vh;
+    position: relative;
+    top: -4vh;
+    left: 3vw;
+    @include Board();
+    background-color: $bluethemeEl;
+    border: 1px solid $litebluetheme;
+
+    input,
+    textarea {
+      position: relative;
+      left: 0vw;
+      width: 25vw;
+      padding: 1.3rem;
+      border-radius: 0.5rem;
+      resize: none;
+    }
+
+    .textcnct {
+      position: relative;
+      left: 0vw;
+      width: 25vw;
+      resize: none;
+      height: 20vh;
+      border: none;
+    }
+    button {
+      width: 10vw;
+      height: 3.7rem;
+      border-radius: 5px;
+      border: none;
+      background-color: $litebluetheme;
+      color: $textWhite;
+      position: relative;
+      left: 0vw;
+      transition: 500ms ease all;
+
+      &:hover {
+        background-color: rgba(243, 232, 232, 0.562);
+        color: $textColor;
+      }
+    }
+  }
+}
+
+.cont-images {
+  width: 110vw;
+  height: 100vh;
+  position: relative;
+  top: -20vh;
+  left: 0vw;
+  border-radius: 10px;
+  transition: 500ms ease all;
+}

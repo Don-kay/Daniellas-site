@@ -1,0 +1,131 @@
+.snd {
+  --fadehover: #c4dbe2;
+  --borderbtn: 2.5px solid var(--portal);
+  --portal: #050516;
+  --textColor: #000000;
+  --textHover: #fff5f5;
+  --border: #020b35;
+  --border2: #6b0505;
+  --bgtint: #4ed9eb2f;
+  --bgmain: rgb(71, 126, 179);
+  --borderdisp: 3px solid var(--border);
+  --borderdisp2: 3px solid var(--border2);
+}
+
+.submenu {
+  position: absolute;
+  top: 15vh;
+  left: 0vw;
+  display: block;
+  width: 20vw;
+  height: 15vh;
+  background-color: #c4dbe2;
+  border-radius: 5px;
+  z-index: 999;
+  -webkit-transition: 500ms ease all;
+  transition: 500ms ease all;
+}
+
+.submenu::after {
+  content: "";
+  position: absolute;
+  background-color: #c4dbe2;
+  top: -0.5vh;
+  width: 0.5vw;
+  height: 1vh;
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+  -webkit-transition: 500ms ease all;
+  transition: 500ms ease all;
+}
+
+.submenu .menupage {
+  position: relative;
+  top: 0vh;
+  font-size: 14px;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+.submenu .menupage::after {
+  content: "";
+  position: absolute;
+  top: 2vh;
+  margin-bottom: -5px;
+  left: 9vw;
+  width: 2rem;
+  height: 1.7px;
+  background-color: #bd2323;
+}
+
+.subMenufix {
+  position: fixed;
+}
+
+.close-submenu {
+  opacity: 0;
+  -webkit-transition: 500ms ease;
+  transition: 500ms ease;
+  position: absolute;
+  top: 15vh;
+  left: 30vw;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 20vw;
+  height: 20vh;
+  background-color: #0aa116;
+  z-index: 699;
+}
+
+.col-2 {
+  position: relative;
+}
+
+.submenucolumn {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+  padding: 10px;
+  width: 20vw;
+  position: relative;
+  top: 0vh;
+  left: 0vw;
+}
+
+.submenuref {
+  position: relative;
+  left: 0vw;
+  font-weight: 600;
+  font-size: 12px;
+  color: #01030e;
+  letter-spacing: 0.9px;
+  padding: 10px;
+  width: 4.7vw;
+  height: 4vh;
+  background-color: #cfcfcf;
+}
+
+.submenuref:hover {
+  color: #bd2323;
+}
+
+#li {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[3];
+      grid-template-columns: repeat(3 1fr);
+}
+/*# sourceMappingURL=submenu.css.map */

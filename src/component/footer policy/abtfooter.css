@@ -1,0 +1,140 @@
+.footer {
+  width: 100vw;
+  max-height: 60vh;
+  background-color: black;
+  position: absolute;
+  padding-bottom: 0vh;
+  bottom: -215vh;
+  z-index: -1;
+}
+
+.newsletter {
+  position: relative;
+  top: 0vh;
+  right: 5vw;
+}
+
+.newsletrr {
+  width: 100vw;
+  height: 60vh;
+  position: relative;
+  top: 0vh;
+}
+
+.newsheader {
+  position: relative;
+  top: 0vh;
+  font-size: 30px;
+}
+
+.newsheader #last {
+  font-size: 19px;
+}
+
+.sub-text {
+  position: relative;
+  top: 10vh;
+  font-size: 20px;
+  font-weight: 400;
+}
+
+input {
+  margin-top: 10vh;
+  width: 19vw;
+  height: 6vh;
+  font-size: 13px;
+  padding-left: 20px;
+  letter-spacing: 1.5px;
+  border: none;
+  border-radius: 5px;
+}
+
+.letter {
+  margin-top: 5vh;
+  width: 7vw;
+  height: 6vh;
+  border-radius: 5px;
+  border: none;
+  margin-left: 2px;
+}
+
+.footer-nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background-color: black;
+  width: 100vw;
+  height: 40vh;
+  position: relative;
+  top: 10vh;
+}
+
+.footertxt {
+  text-align: justify;
+  position: relative;
+  top: 4vh;
+  left: -6vh;
+  width: 350vw;
+  height: 30vh;
+  background-color: aqua;
+  color: white;
+}
+
+.footertxt .foot {
+  position: relative;
+  top: -10vh;
+  width: 10vh;
+}
+
+.school-logo {
+  width: 10vw;
+  position: relative;
+  top: 20px;
+  margin-left: 10px;
+}
+
+.nav {
+  text-align: center;
+  position: relative;
+  text-decoration: none;
+}
+
+.linkhead {
+  color: azure;
+}
+
+.links {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  position: relative;
+  left: -14vh;
+  width: 80vw;
+  height: 40vh;
+}
+
+.quick-links {
+  width: 16vw;
+  height: 30vh;
+  position: relative;
+  top: 6vh;
+  left: 0vw;
+}
+
+input {
+  margin-top: 0vh;
+}
+
+.contform {
+  position: relative;
+  top: 0vh;
+  background-color: black;
+  height: 0vh;
+}
+/*# sourceMappingURL=abtfooter.css.map */

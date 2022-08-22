@@ -1,0 +1,44 @@
+.App {
+  text-align: center;
+}
+h1 {
+  font-size: 20px;
+  font-family: "Oswald";
+  font-weight: 500;
+}
+h2 {
+  font-size: 25px;
+  font-family: "Oswald";
+  font-weight: 500;
+}
+p {
+  font-size: 12px;
+}
+h3 {
+  font-weight: 600;
+  font-size: 11px;
+
+  color: rgba(105, 95, 95, 0.801);
+}
+h4 {
+  font-weight: 300;
+  font-size: 13px;
+  /* color: #1d1b1b; */
+}
+span {
+  color: red;
+  font-size: 36px;
+  font-weight: 600;
+}
+
+body {
+  margin: 0;
+  color: rgb(36, 31, 31);
+  font-feature-settings: "abvm";
+  letter-spacing: 0.6px;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  /* letter-spacing: 1px; */
+  background-color: rgb(232, 234, 238);
+  overflow-x: hidden;
+}

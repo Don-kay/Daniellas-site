@@ -1,0 +1,178 @@
+.snd {
+  --fadehover: #c4dbe2;
+  --borderbtn: 2.5px solid var(--portal);
+  --portal: #050516;
+  --textColor: #000000;
+  --textHover: #fff5f5;
+  --border: #020b35;
+  --border2: #6b0505;
+  --bgtint: #4ed9eb2f;
+  --bgmain: rgb(71, 126, 179);
+  --borderdisp: 3px solid var(--border);
+  --borderdisp2: 3px solid var(--border2);
+}
+
+.slidecontwhy {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  position: relative;
+  padding-left: 0vw;
+  top: 13vh;
+  left: 0vw;
+  border: none;
+  border-radius: 2px;
+  -webkit-box-shadow: 0px 0px 10px rgba(97, 95, 95, 0.295);
+          box-shadow: 0px 0px 10px rgba(97, 95, 95, 0.295);
+  width: 100vw;
+  height: 56vh;
+  padding-top: 90px;
+  overflow: hidden;
+}
+
+.slidecontwhy .imageswhy {
+  width: 100vw;
+  height: 100vh;
+  position: relative;
+  top: 0vh;
+  left: 0.4vw;
+  border-radius: 10px;
+  border: 1px solid transparent;
+  -webkit-transition: 500ms ease all;
+  transition: 500ms ease all;
+}
+
+.policy_cont {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  position: relative;
+  top: 0vh;
+  width: 100vw;
+  height: 100vh;
+}
+
+.policy-main {
+  display: block;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: relative;
+  top: 18vh;
+  left: 0vw;
+  width: 100vw;
+  height: 100vh;
+}
+
+.whyHerocont {
+  background-color: black;
+  width: 200vh;
+  height: 70vh;
+  position: relative;
+  left: 0vw;
+}
+
+.gallerieswhy {
+  position: relative;
+  top: 0vh;
+  left: -13px;
+  height: 40vh;
+  width: 0vw;
+  -webkit-animation: slide 30s linear infinite;
+          animation: slide 30s linear infinite;
+  -webkit-transition: 1000ms ease all;
+  transition: 1000ms ease all;
+}
+
+.whyText {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  position: relative;
+  top: 0vh;
+  left: 25vw;
+  width: 50vw;
+  height: 70vh;
+  background-color: #beaaaa;
+}
+
+.whyevent {
+  margin-top: 10 vh;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[3];
+      grid-template-columns: repeat(3, 1fr);
+  row-gap: 0vh;
+  width: 50vw;
+}
+
+.whycontents {
+  position: relative;
+  top: 15vh;
+  left: 24.6vw;
+  width: 15vw;
+  height: 40vh;
+  background-color: #beaaaa;
+  border-radius: 10px;
+  overflow: hidden;
+  margin: 20px;
+  -webkit-transition: 500ms ease all;
+  transition: 500ms ease all;
+}
+
+.whycontents .image2 {
+  width: 70vw;
+}
+
+.whycontents .whyHead {
+  font-size: 22px;
+}
+
+.whycontents:hover {
+  -webkit-transform: scale(1.02);
+          transform: scale(1.02);
+}
+
+.whycontents .whyimgcont {
+  width: 21vw;
+  height: 30vh;
+  position: relative;
+  left: -2vw;
+  overflow: hidden;
+}
+
+.whycontents .whyimgcont .whyimG {
+  width: 21vw;
+  height: 30vh;
+  position: relative;
+  left: 0vw;
+}
+
+.whycontents .whyimgcont .style {
+  width: 17vw;
+  height: 45vh;
+  opacity: 1;
+}
+
+.image2 {
+  width: 70vw;
+}
+/*# sourceMappingURL=why.css.map */

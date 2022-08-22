@@ -1,0 +1,200 @@
+@import "../../../variablecomp/variable.scss";
+.kss2cont {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  background-color: rgb(98, 155, 230);
+  padding-left: 0vw;
+  top: 13vh;
+  left: 0vw;
+  // outline: 1px solid black;
+  border: none;
+  border-radius: 2px;
+  box-shadow: 0px 0px 10px rgba(97, 95, 95, 0.295);
+  width: 100vw;
+  height: 30vh;
+  padding-top: 90px;
+  overflow: hidden;
+
+  .eventImg {
+    position: relative;
+    top: 25vh;
+  }
+}
+.eventimg {
+  position: fixed;
+  width: 100vw;
+  height: 100vh;
+  top: 0vh;
+  padding-top: 50px;
+  background-color: black;
+  visibility: visible;
+  z-index: 100;
+
+  .eventimages {
+    width: 70vw;
+    height: 80vh;
+    border-radius: 10px;
+    margin-top: -6vh;
+  }
+  .eventheader {
+    color: $textWhite;
+    font-size: 35px;
+  }
+  .aicon {
+    position: absolute;
+    top: 6vh;
+    color: $textWhite;
+    height: 5.8vh;
+    width: 3vw;
+    border-radius: 50%;
+    right: 8vw;
+    padding: 9px;
+    background-color: $litebluetheme;
+    transform: rotate(0);
+    transition: 500ms ease all;
+    transform: scale(0.9);
+
+    &:hover {
+      background-color: $literbluetheme;
+      transform: rotate(180deg);
+    }
+  }
+}
+.abcd {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+}
+.abc {
+  width: 100vw;
+  position: relative;
+  left: 0vw;
+  top: 0vh;
+}
+.event_cont {
+  display: block;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  top: 0vh;
+  width: 100vw;
+  height: 100vh;
+}
+
+.event-main {
+  display: block;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  top: 30vh;
+  left: 0vw;
+  width: 100vw;
+  height: 110vh;
+  padding-top: -5vh;
+}
+.eventText {
+  display: block;
+  justify-content: center;
+  position: relative;
+  top: -1vh;
+  left: 30vw;
+  width: 40vw;
+  height: 15vh;
+  padding-top: 4px;
+  @include Board();
+
+  &::after {
+    content: "";
+    position: absolute;
+    bottom: -5vh;
+    left: -30vw;
+    width: 100vw;
+    height: 0.1pt;
+    background-color: rgba(202, 190, 190, 0.747);
+    box-shadow: 0px 2px 6px $literbluetheme;
+  }
+}
+
+// p {
+//   padding: 0px 50px 10px 50px;
+//   text-align: justify;
+//   font-size: 15px;
+//   font-weight: 500;
+//   letter-spacing: 1px;
+//   line-height: 1.5;
+//   color: $textColor;
+// }
+// li {
+//   padding: 0px 50px 10px 50px;
+//   text-align: justify;
+//   font-size: 15px;
+//   font-weight: 500;
+//   letter-spacing: 1px;
+//   line-height: 1.5;
+//   color: $textColor;
+// }
+
+.eventpicturesCont {
+  position: relative;
+  top: 10vh;
+  left: 20vw;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  row-gap: 70px;
+  width: 60vw;
+  align-items: center;
+
+  .eventElcont {
+    position: relative;
+    display: block;
+    justify-content: center;
+    align-items: center;
+    width: 19vw;
+    height: 43vh;
+    overflow: hidden;
+    background-color: rgba(131, 122, 122, 0.575);
+    border-radius: 10px;
+    box-shadow: $boardcolor;
+    transform: scale(0.95);
+    transition: 500ms ease all;
+
+    &:hover {
+      transform: scale(1);
+    }
+
+    .pixCont {
+      position: relative;
+      width: 22vw;
+      height: 33vh;
+      background-color: red;
+      overflow: hidden;
+
+      .evtpix {
+        width: 27vw;
+        height: 42vh;
+        position: relative;
+        left: -80px;
+        top: -5vh;
+      }
+      .evtpix.evtreshape {
+        width: 20vw;
+        height: 46vh;
+        left: -2vw;
+        top: -4vh;
+      }
+    }
+
+    .eventcurriculum {
+      padding: 0px 50px 10px 50px;
+      letter-spacing: 1px;
+      font-size: 22px;
+      color: $redEl;
+      position: fixed;
+      text-align: center;
+      top: 32vh;
+      left: 2vw;
+    }
+  }
+}

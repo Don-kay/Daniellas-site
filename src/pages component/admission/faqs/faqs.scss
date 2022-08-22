@@ -1,0 +1,214 @@
+@import "../../../variablecomp/variable.scss";
+.slidecontwhy {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  padding-left: 0vw;
+  top: 13vh;
+  left: -1vw;
+  // outline: 1px solid black;
+  border: none;
+  border-radius: 2px;
+  box-shadow: 0px 0px 10px rgba(97, 95, 95, 0.295);
+  width: 100vw;
+  height: 56vh;
+  padding-top: 90px;
+  overflow: hidden;
+}
+
+.policy_cont {
+  display: block;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  top: 10vh;
+  width: 100vw;
+  height: 100vh;
+}
+.policy-main {
+  display: block;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  top: 18vh;
+  left: 0vw;
+  width: 100vw;
+  height: 100vh;
+}
+
+.gallerieswhy {
+  position: relative;
+  top: 0vh;
+  left: -13px;
+  height: 40vh;
+  width: 0vw;
+  // outline: 1px solid black;
+  // background-color: rgb(230, 222, 222);
+  animation: slide 30s linear infinite;
+  transition: 1000ms ease all;
+}
+.accordion {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  // background-color: rgb(128, 21, 39);
+  top: -77vh;
+  left: 0vw;
+  width: 100vw;
+  height: 70vh;
+}
+.faqText {
+  display: block;
+  position: absolute;
+  top: 0vh;
+  left: 26vw;
+  width: 50vw;
+  height: 70vh;
+  // background-image: url("../../../assets/img5.jpg");
+  // background-size: cover;
+  @include Board2();
+  // background-color: rgb(190, 170, 170);
+  padding-top: 20px;
+  overflow: hidden;
+
+  .questions {
+    position: relative;
+    width: 23vw;
+    margin-left: 10%;
+    margin-top: 1vh;
+    min-height: 0px;
+    position: relative;
+    // background-color: aqua;
+    transition: 500ms ease all;
+
+    .question-main {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      background-color: $boardbg;
+      border-radius: 5px;
+      perspective: 100px;
+      transition: 200ms ease all;
+      padding-top: 10px;
+
+      &:hover {
+        background-color: $literbluetheme;
+        box-shadow: 0px 0px 3px $litebluefainttheme;
+        perspective: 20px;
+      }
+    }
+    .question {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      position: relative;
+      left: 5px;
+      font-size: 14px;
+      letter-spacing: 0px;
+      // font-weight: 600;
+      border-radius: 3px;
+      width: 20vw;
+      height: 30px;
+      color: rgb(61, 57, 57);
+      text-transform: lowercase;
+      cursor: pointer;
+      transition: 500ms ease all;
+    }
+    .answer-main {
+      position: relative;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      top: 0.7vh;
+      left: 24vw;
+      min-height: 160px;
+      border-radius: 10px;
+      // height: 150px;
+      background-color: black;
+
+      width: 20vw;
+      transition: 500ms ease all;
+
+      .brief {
+        font-size: 12px;
+        margin-top: 0vh;
+        transition: 500ms ease all;
+      }
+
+      &::after {
+        content: "";
+        position: absolute;
+        left: 9vw;
+        top: -10px;
+        width: 10vw;
+        border-radius: 20px;
+        height: 5px;
+        background-color: rgb(0, 0, 0);
+        transition: 500ms ease all;
+      }
+    }
+    .answer-main-close {
+      position: relative;
+      top: 0.7vh;
+      left: 24vw;
+      height: 2px;
+      // height: 150px;
+      background-color: black;
+      font-size: 2px;
+      width: 20vw;
+      border-radius: 10px;
+      // transition: 750ms ease all;
+      overflow-y: hidden;
+      opacity: 0;
+
+      .brief {
+        font-size: 14px;
+        position: relative;
+        top: -4vh;
+        height: 0vh;
+        margin-top: 0vh;
+        transition: 500ms ease all;
+      }
+
+      &::after {
+        content: "";
+        position: absolute;
+        left: 0vw;
+        top: -10px;
+        width: 0vw;
+        height: 0px;
+        background-color: rgb(0, 0, 0);
+        transition: 500ms ease all;
+      }
+    }
+  }
+}
+
+.whyevent {
+  margin-top: 10 vh;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  row-gap: 0vh;
+  width: 50vw;
+}
+.whycontent {
+  position: relative;
+  top: 15vh;
+  left: 24.6vw;
+  width: 15vw;
+  height: 40vh;
+  background-color: rgb(190, 170, 170);
+  border-radius: 10px;
+  overflow: hidden;
+  margin: 20px;
+  transition: 500ms ease all;
+  &:hover {
+    transform: scale(1.02);
+  }
+  .whyimG {
+    width: 15vw;
+    height: 30vh;
+  }
+}

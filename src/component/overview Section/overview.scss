@@ -1,0 +1,316 @@
+.motto {
+  position: relative;
+  top: 90vh;
+  z-index: 50;
+  // background-color: aqua;
+  height: 200vh;
+}
+h1 {
+  font-size: 25pt;
+}
+.line {
+  position: relative;
+  content: "";
+  left: 45vw;
+  bottom: 2vh;
+  width: 6vw;
+  height: 0.3vh;
+  border: none;
+  border-radius: 5px;
+  background-color: rgb(141, 8, 8);
+
+  &::after {
+    content: "";
+    position: absolute;
+    top: -5px;
+    left: 140px;
+    background-color: rgb(141, 8, 8);
+    width: 14px;
+    height: 14px;
+    border-radius: 50%;
+  }
+  &::before {
+    content: "";
+    position: absolute;
+    top: -5px;
+    left: 170px;
+    background-color: rgb(141, 8, 8);
+    width: 14px;
+    height: 14px;
+    border-radius: 50%;
+  }
+}
+.elcont {
+  position: absolute;
+  top: -5em;
+  width: 100vw;
+  height: 78vh;
+  // box-shadow: 0px 1px 7px rgba(105, 100, 100, 0.493);
+  // background-image: url(./../../../public/hero2.jpg);
+  background-color: rgb(232, 234, 238);
+  overflow: hidden;
+  // filter: opacity(0.2);
+  z-index: -1;
+}
+
+.elitem {
+  position: relative;
+  display: inline-flex;
+  justify-content: center;
+  top: -6vh;
+  width: 100vw;
+  height: 100vh;
+  z-index: -4;
+}
+.wtour {
+  position: relative;
+  // border: 1px solid rgb(126, 116, 116);
+  border-radius: 50%;
+  width: 7vw;
+  height: 14vh;
+  left: 20vw;
+}
+.tourLogo {
+  width: 9vw;
+  margin-top: 19px;
+}
+
+.wtour.upLeft {
+  top: 16vh;
+  left: 2vw;
+  background-color: rgb(218, 218, 18);
+  filter: opacity(0.9);
+}
+.wtour.upRight {
+  top: 25vh;
+  left: 32vw;
+  background-color: rgb(104, 85, 214);
+}
+.wtour.bottomMid {
+  top: 68vh;
+  left: 8vw;
+  background-color: rgb(30, 184, 63);
+}
+.header {
+  position: relative;
+  left: 0.5vw;
+  font-family: Oswald;
+  font-weight: 500;
+  font-size: 17px;
+  top: 4px;
+  letter-spacing: 1.5px;
+}
+.text {
+  text-align: center;
+  background-color: rgb(70, 67, 64);
+  padding: 10px;
+  width: 10rem;
+  margin-left: 20px;
+  margin-top: 16px;
+  font-size: 9px;
+  font-weight: 400;
+  border-radius: 10px;
+  letter-spacing: 0.8px;
+}
+// .text::after {
+//   display: asp;
+//   width: 37px;
+//   height: 60px;
+//   background-color: red;
+//   position: relative;
+//   top: -10vh;
+// }
+.textcontainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  position: relative;
+  top: 0vh;
+  left: 0vw;
+  width: 110vw;
+  height: 100vh;
+  z-index: 6;
+}
+.sec2 {
+  position: relative;
+  background-color: rgb(252, 252, 252);
+  top: -12vh;
+  height: 80vh;
+  overflow: hidden;
+  z-index: 7;
+}
+.ceo {
+  width: 12vw;
+  height: 20vh;
+  border-radius: 5px;
+  z-index: 5;
+  margin-top: 2vh;
+}
+
+.ceosec {
+  display: in-flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  top: 8vh;
+  left: 4vw;
+  width: 12vw;
+  height: 24vh;
+  // background-image: linear-gradient(rgb(141, 141, 221) 20%, rgb(8, 14, 97));
+  background-color: rgb(19, 8, 179);
+  border-radius: 10px;
+  box-shadow: 0 0px 4px rgb(20, 20, 20);
+}
+.ceosecont {
+  position: absolute;
+  top: 65vh;
+  left: -3vw;
+  content: "";
+  width: 8vw;
+  height: 16vh;
+  border-radius: 50%;
+  background-color: black;
+}
+.ceospeech {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  top: 0vh;
+  right: 10vw;
+  background-color: black;
+  width: 180vw;
+  height: 100vh;
+
+  .ceoCover {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    top: -18vh;
+    left: 0vw;
+    background-color: pink;
+    width: 30vw;
+    height: 50vh;
+    border-radius: 5px;
+    z-index: 6;
+    overflow: hidden;
+
+    .ceoimg {
+      position: relative;
+      top: 17vh;
+      left: 0vw;
+      // background-color: black;
+      width: 50vw;
+      height: 90vh;
+      border-radius: 5px;
+      z-index: 6;
+      opacity: 1;
+    }
+  }
+}
+
+.tourimg {
+  position: absolute;
+  top: 0vh;
+  left: -5vw;
+  width: 39vw;
+  height: 59vh;
+  opacity: 0;
+  transition: 700ms ease all;
+}
+.tourimg.active {
+  opacity: 1;
+}
+
+.tourimgcont {
+  position: relative;
+  top: 80px;
+  left: -11vw;
+  display: flex;
+  border-radius: 50%;
+  box-shadow: 0 5px 9px rgba(70, 70, 71, 0.753);
+  // outline: 1px solid red;
+  width: 28vw;
+  height: 56vh;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+article {
+  position: relative;
+  top: 73vh;
+  left: 32vw;
+
+  width: 50rem;
+  height: 50rem;
+}
+.welcmtext {
+  position: relative;
+  top: -4ch;
+  width: 100vw;
+  left: -43ch;
+  text-align: justify;
+  // font-size: 13px;
+  // padding: 135px
+  // word-spacing: 1.5px;
+  line-height: 2rem;
+}
+#wclmtext {
+  width: 100vw;
+  height: 100vh;
+  position: absolute;
+  top: 0vh;
+
+  overflow: hidden;
+  z-index: 6;
+}
+.overlay {
+  position: relative;
+  top: -261vh;
+  background-color: #2409ba;
+  width: 100vw;
+  height: 100vh;
+  filter: opacity(0.3);
+  z-index: 5;
+}
+
+.shapessphere {
+  position: absolute;
+  top: -20vh;
+  right: -15vh;
+  filter: opacity(0.9);
+}
+.shapesspheresmall {
+  position: absolute;
+  top: 72vh;
+  left: -20vh;
+  border-radius: 50%;
+  filter: opacity(0.8);
+  background-color: #2409ba;
+  z-index: -2;
+}
+.shapesspheresmall1 {
+  position: absolute;
+  top: 50vh;
+  right: 28vh;
+  filter: opacity(1);
+}
+.shapeTrianglesmall {
+  position: absolute;
+  top: 59vh;
+  right: 28vh;
+  filter: opacity(0.7);
+  z-index: 0;
+  transform: rotate(135deg);
+}
+.book {
+  position: absolute;
+  left: 2vw;
+  top: 20vh;
+  width: 25vw;
+  height: 36vh;
+  filter: opacity(0.5);
+  transform: rotate(-20deg);
+}

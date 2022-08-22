@@ -1,0 +1,106 @@
+@import "../../variablecomp/variable.scss";
+.submenu {
+  position: absolute;
+  top: 15vh;
+  left: 0vw;
+  display: block;
+  width: 20vw;
+  height: 15vh;
+  background-color: $fadehover;
+  border-radius: 5px;
+  z-index: 999;
+  transition: 500ms ease all;
+  // overflow: hidden;
+
+  &::after {
+    content: "";
+    position: absolute;
+    background-color: $fadehover;
+    top: -0.5vh;
+    width: 0.5vw;
+    height: 1vh;
+    transform: rotate(45deg);
+    transition: 500ms ease all;
+  }
+  .menupage {
+    position: relative;
+    top: 0vh;
+    font-size: 14px;
+    font-weight: 600;
+    text-transform: uppercase;
+
+    &::after {
+      content: "";
+      position: absolute;
+      top: 2vh;
+      margin-bottom: -5px;
+      left: 9vw;
+      width: 2rem;
+      height: 1.7px;
+      background-color: $redEl;
+    }
+  }
+}
+.subMenufix {
+  position: fixed;
+}
+
+.close-submenu {
+  opacity: 0;
+  transition: 500ms ease;
+  position: absolute;
+  top: 15vh;
+  left: 30vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 20vw;
+  height: 20vh;
+  background-color: rgb(10, 161, 22);
+  z-index: 699;
+}
+
+.col-2 {
+  position: relative;
+}
+.submenucolumn {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  text-align: center;
+  padding: 10px;
+  // background-color: red;
+  width: 20vw;
+  position: relative;
+  top: 0vh;
+  left: 0vw;
+}
+.submenuref {
+  position: relative;
+  left: 0vw;
+  font-weight: 600;
+  font-size: 12px;
+  color: $darkbluetheme;
+  letter-spacing: 0.9px;
+  padding: 10px;
+
+  width: 4.7vw;
+  height: 4vh;
+  background-color: rgb(207, 207, 207);
+  &:hover {
+    color: $redEl;
+  }
+}
+
+#li {
+  display: grid;
+  grid-template-columns: repeat(3 1fr);
+}
+// .submenuref {
+//   position: relative;
+//   font-size: 13px;
+//   font-weight: 500;
+//   color: $textColor;
+//   line-height: 0px;
+//   margin-top: 5px;
+// }

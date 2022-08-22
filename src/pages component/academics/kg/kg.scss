@@ -1,0 +1,177 @@
+@import "../../../variablecomp/variable.scss";
+
+.slidecont {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  padding-left: 0vw;
+  top: 13vh;
+  left: 0vw;
+  // outline: 1px solid black;
+  border: none;
+  border-radius: 2px;
+  box-shadow: 0px 0px 10px rgba(97, 95, 95, 0.295);
+  width: 100vw;
+  height: 80vh;
+  padding-top: 90px;
+  overflow: hidden;
+}
+.galleries {
+  position: relative;
+  top: 0vh;
+  left: -13px;
+  height: 100vh;
+  width: 0vw;
+  // outline: 1px solid black;
+  // background-color: rgb(230, 222, 222);
+  animation: slide 30s linear infinite;
+  transition: 1000ms ease all;
+}
+.textelemets {
+  display: block;
+  justify-content: center;
+  position: relative;
+  top: -90vh;
+  z-index: 10;
+  animation: slideDown 3000ms ease-in 1;
+}
+.kgs_cont {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  top: 0vh;
+  width: 100vw;
+  height: 100vh;
+}
+.text {
+  font-family: "Oswald";
+  font-size: 5ch;
+  font-weight: 600;
+  color: $textWhite;
+  background-color: transparent;
+  margin-left: 17vw;
+  width: 40vw;
+}
+.policys-main {
+  display: block;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  top: 18vh;
+  left: 10vw;
+  width: 100vw;
+  height: 100vh;
+}
+.kg1sText {
+  display: block;
+  justify-content: center;
+  position: relative;
+  top: 5vh;
+  left: 6vw;
+  width: 40vw;
+  height: 299vh;
+  @include Board2();
+  .kghead {
+    text-align: justify;
+    padding: 40px 50px 10px 50px;
+    letter-spacing: 1px;
+    font-size: 20px;
+    color: $redEl;
+  }
+  .kghead1 {
+    text-align: justify;
+    padding: 10px 50px 10px 50px;
+    letter-spacing: 1px;
+    font-size: 20px;
+    color: $redEl;
+
+    span {
+      padding: 0px 50px 6px 0px;
+      text-align: justify;
+      font-size: 16px;
+      font-weight: 500;
+      letter-spacing: 1px;
+      line-height: 1.5;
+      color: $textColor;
+    }
+  }
+  .curriculumkg {
+    text-align: justify;
+    padding: 0px 50px 10px 50px;
+    letter-spacing: 1px;
+    font-size: 17px;
+    color: $redEl;
+
+    p {
+      padding: 0px 50px 10px 50px;
+      text-align: justify;
+      font-size: 15px;
+      font-weight: 500;
+      letter-spacing: 1px;
+      line-height: 1.9;
+      color: $textColor;
+    }
+    li {
+      padding: 0px 50px 10px 50px;
+      text-align: justify;
+      font-size: 14px;
+      font-weight: 400;
+      letter-spacing: 1px;
+      line-height: 1.1;
+      color: $textColor;
+    }
+  }
+}
+p {
+  padding: 0px 50px 10px 50px;
+  text-align: justify;
+  font-size: 15px;
+  letter-spacing: 1px;
+  line-height: 1.5;
+}
+.imageskg {
+  width: 100vw;
+  height: 120vh;
+  position: relative;
+  top: 0vh;
+  left: 0vw;
+  border-radius: 10px;
+  border: 1px solid transparent;
+  transition: 500ms ease all;
+}
+.kgpicturesCont {
+  position: relative;
+  top: 107vh;
+  left: -2vw;
+
+  .pictures {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    width: 23vw;
+    height: 36vh;
+    margin-top: 13vh;
+    position: relative;
+    left: -15vw;
+    border-radius: 3px;
+    background-color: red;
+
+    .kidsImg {
+      margin-top: -10vh;
+      height: 70vh;
+      width: 30vw;
+      opacity: 1;
+    }
+  }
+
+  .pix {
+    width: 53vw;
+    height: 36vh;
+    position: relative;
+    left: 0vw;
+    border-radius: 3px;
+  }
+}

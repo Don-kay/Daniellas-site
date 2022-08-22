@@ -1,0 +1,194 @@
+@import "../../../variablecomp/variable.scss";
+.skillscont {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  background-color: rgb(98, 155, 230);
+  padding-left: 0vw;
+  top: 13vh;
+  left: 0vw;
+  // outline: 1px solid black;
+  border: none;
+  border-radius: 2px;
+  box-shadow: 0px 0px 10px rgba(97, 95, 95, 0.295);
+  width: 100vw;
+  height: 30vh;
+  padding-top: 90px;
+  overflow: hidden;
+
+  .skilhero {
+    width: 100vw;
+    margin-top: 95vh;
+  }
+}
+.skillimg {
+  position: fixed;
+  width: 100vw;
+  height: 100vh;
+  top: 0vh;
+  padding-top: 50px;
+  background-color: black;
+  visibility: visible;
+  z-index: 100;
+
+  .skillimageCont {
+    position: relative;
+    left: 13vw;
+    top: -8vh;
+    width: 70vw;
+    height: 80vh;
+    border-radius: 10px;
+    overflow: hidden;
+
+    .skillimages {
+      width: 70vw;
+      height: 140vh;
+      border-radius: 10px;
+    }
+  }
+
+  .skillheader {
+    margin-top: -5vh;
+    color: $textWhite;
+    font-size: 35px;
+  }
+  .aicon {
+    position: absolute;
+    top: 6vh;
+    color: $textWhite;
+    height: 5.8vh;
+    width: 3vw;
+    border-radius: 50%;
+    right: 8vw;
+    padding: 9px;
+    background-color: $litebluetheme;
+    transform: rotate(0);
+    transition: 500ms ease all;
+    transform: scale(0.9);
+
+    &:hover {
+      background-color: $literbluetheme;
+      transform: rotate(180deg);
+    }
+  }
+}
+.abcd {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+}
+.abc {
+  width: 100vw;
+  position: relative;
+  left: 0vw;
+  top: 0vh;
+}
+.skill_cont {
+  display: block;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  top: -10vh;
+  width: 100vw;
+  height: 100vh;
+}
+
+.skill-main {
+  display: block;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  top: 30vh;
+  left: 0vw;
+  width: 100vw;
+  height: 110vh;
+}
+.skillText {
+  display: block;
+  justify-content: center;
+  position: relative;
+  top: 0vh;
+  left: 30vw;
+  width: 40vw;
+  height: 15vh;
+  padding-top: 20px;
+  @include Board();
+
+  &::after {
+    content: "";
+    position: absolute;
+    bottom: -2vh;
+    left: -30vw;
+    width: 100vw;
+    height: 0.1pt;
+    background-color: rgba(202, 190, 190, 0.747);
+    box-shadow: 0px 2px 6px $literbluetheme;
+  }
+}
+
+.skillcurriculum {
+  padding: 0px 50px 10px 50px;
+  letter-spacing: 1px;
+  font-size: 22px;
+  color: $redEl;
+  position: relative;
+  text-align: center;
+
+  // p {
+  //   padding: 0px 50px 10px 50px;
+  //   text-align: justify;
+  //   font-size: 15px;
+  //   font-weight: 500;
+  //   letter-spacing: 1px;
+  //   line-height: 1.5;
+  //   color: $textColor;
+  // }
+  // li {
+  //   padding: 0px 50px 10px 50px;
+  //   text-align: justify;
+  //   font-size: 15px;
+  //   font-weight: 500;
+  //   letter-spacing: 1px;
+  //   line-height: 1.5;
+  //   color: $textColor;
+  // }
+}
+
+.skillpicturesCont {
+  position: relative;
+  top: 10vh;
+  left: 20vw;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  row-gap: 70px;
+  width: 60vw;
+  align-items: center;
+
+  .skillElcont {
+    position: relative;
+    display: block;
+    width: 19vw;
+    height: 30vh;
+
+    .style2 {
+      height: 0vh;
+      top: 0vh;
+    }
+
+    .skillpix {
+      width: 19vw;
+      height: 30vh;
+      position: relative;
+      left: 0px;
+      border-radius: 10px;
+      box-shadow: $boardcolor;
+      transform: scale(0.98);
+      transition: 500ms ease all;
+
+      &:hover {
+        transform: scale(1.01);
+      }
+    }
+  }
+}

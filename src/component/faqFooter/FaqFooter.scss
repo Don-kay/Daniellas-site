@@ -1,0 +1,134 @@
+@import "../../variablecomp/variable.scss";
+.footers {
+  width: 100vw;
+  height: 40vh;
+  position: relative;
+  padding-bottom: 0vh;
+
+  top: 6vh;
+  z-index: 1;
+}
+.newsletters {
+  // background-color: rgb(25, 23, 143);
+  background-color: darkkhaki;
+  position: relative;
+  top: -8vh;
+  right: 7vw;
+}
+.newsletrr {
+  width: 100vw;
+  height: 60vh;
+  position: relative;
+
+  top: 0vh;
+}
+
+.newsheader {
+  position: relative;
+  top: 0vh;
+  font-size: 30px;
+  #last {
+    font-size: 19px;
+  }
+}
+.sub-text {
+  position: relative;
+  top: 10vh;
+  font-size: 20px;
+  font-weight: 400;
+}
+input {
+  margin-top: 10vh;
+  width: 19vw;
+  height: 6vh;
+  font-size: 13px;
+  padding-left: 20px;
+  letter-spacing: 1.5px;
+  border: none;
+  border-radius: 5px;
+}
+.letter {
+  margin-top: 5vh;
+  width: 7vw;
+  height: 6vh;
+  border-radius: 5px;
+  border: none;
+  margin-left: 2px;
+}
+.footer-navs {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: transparent;
+  width: 100vw;
+  height: 50vh;
+  position: relative;
+  top: 0vh;
+}
+.footertxts {
+  text-align: justify;
+  position: relative;
+  top: 3vh;
+  left: -20vh;
+  width: 130vw;
+  height: 30vh;
+  background-color: aqua;
+  color: white;
+
+  .foot {
+    position: relative;
+    top: -10vh;
+    width: 10vh;
+  }
+}
+
+.school-logo {
+  width: 10vw;
+  position: relative;
+  top: 20px;
+  margin-left: 10px;
+}
+.nav {
+  text-align: center;
+  position: relative;
+  text-decoration: none;
+}
+.linkhead {
+  color: azure;
+  font-size: 20px;
+}
+
+.link {
+  display: flex;
+  justify-content: center;
+  position: relative;
+  top: 2vh;
+  left: -17vh;
+  // background-color: blue;
+  // margin-top: -23vh;
+  width: 80vw;
+  height: 40vh;
+
+  .quick-links {
+    width: 16vw;
+    height: 30vh;
+    position: relative;
+    top: 6vh;
+    left: 0vw;
+    margin-left: -60px;
+  }
+}
+
+li {
+  list-style: none;
+  color: $litebluetheme;
+}
+input {
+  margin-top: 0vh;
+}
+.contform {
+  position: relative;
+  top: 0vh;
+  // background-color: black;
+  height: 0vh;
+}
